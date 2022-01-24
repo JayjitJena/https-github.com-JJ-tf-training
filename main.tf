@@ -1,3 +1,14 @@
+resource "aws_s3_bucket" "accent" {
+  bucket = "${var.prefix}-mybucket"
+  acl    = "private"
+
+  tags = {
+    Name        = "Training S3"
+    Environment = "Dev"
+  }
+}
+
+
 resource "aws_vpc" "accent" {
   cidr_block           = var.address_space
   enable_dns_hostnames = true
