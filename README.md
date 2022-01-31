@@ -2,7 +2,7 @@
 
 Training resources for Terraform training. These are base training config code. 
 
-Make a FORK and customize away. 
+Start by Making a FORK and edit away. 
 
 Files:  
 main.tf  
